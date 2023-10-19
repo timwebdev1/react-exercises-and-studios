@@ -3,19 +3,10 @@ import './styling.css'
 
 
 function AuthorInfo() {
-  const recipeAuthor = recipedata.map((data) => (
-    <div key={data.name}>{data.author}</div>
-  ));
-  const recipeAuthorImage = recipedata.map((data) => (
-    <div key={data.name}>
-      <img src={data.authorImage} alt={data.author} className="authorImage" />
-    </div>
-  ));
-  const recipeWebsite = recipedata.map((data) => (
-    <div key={data.name}>
-      <a href={data.website}>{data.website}</a>
-    </div>
-  ));
+  const recipeAuthor = <div key={recipedata[0].name}>{recipedata[0].author}</div>;
+  const recipeAuthorImage = <div key={recipedata[0].name}><img src={recipedata[0].authorImage} alt={recipedata[0].author} className="authorImage" /></div>;
+  const recipeWebsite = <div key={recipedata[0].name}><a href={recipedata[0].website}>{recipedata[0].website}</a></div>;
+
   return (
     <div>
       {recipeAuthorImage}
