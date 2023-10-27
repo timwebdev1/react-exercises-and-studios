@@ -2,11 +2,11 @@ import recipedata from "./recipe.json";
 import "./styling.css";
 
 function RecipeImage() {
-  const recipeImage = recipedata.map((data) => (
-    <div key={data.name}>
-      <img src={data.recipeImage} alt={data.name} className="recipeImage" />
+  const recipeImage = (
+    <div key={recipedata[0].name}>
+      <img src={recipedata[0].recipeImage} alt={recipedata[0].name} className="recipeImage" />
     </div>
-  ));
+  );
   return <div>{recipeImage}</div>;
 }
 

@@ -7,8 +7,8 @@ function IngredientList() {
       {recipedata.map((data) => {
         return (
           <div key={data.name}>
-            {data.ingredients.map((ingredient, index) => {
-              return <li key={index}>{ingredient}</li>;
+            {data.ingredients.map((ingredient) => {
+              return <li key={ingredient.id}>{ingredient.ingredientName}</li>;
             })}
           </div>
         );
