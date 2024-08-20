@@ -8,7 +8,7 @@ export default function BookList() {
      "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR2fSayPTDswrzNeSUjsOMST81oB48quXOtwbkC04OkTQWG_knFOs6FAjw4PQ&usqp=CAc";
 
    return (
-      <div>
+      <div class="bookImages">
          <h3>{pageTitle}</h3>
          <img src={book1} alt="The Great Gatsby by F. Scott Fitzgerald" />
          <img src={book2} alt="The Illiad by Homer" />
