@@ -2,11 +2,11 @@ import "./styling.css";
 
 function ClickedButton() {
   function handleClick() {
-    alert("You have removed this pin!");
+    alert("This pin is no longer saved.");
   }
   return (
     <button id="clickedButton" onClick={handleClick}>
-      Clicked
+      Saved
     </button>
   );
 }

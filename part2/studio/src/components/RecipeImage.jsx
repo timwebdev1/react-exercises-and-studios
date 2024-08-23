@@ -1,16 +1,19 @@
-import recipedata from './recipe.json';
+import recipedata from "./recipe.json";
+import "./styling.css";
 
 function RecipeImage() {
-  const recipeImage = recipedata.map((props) => (
-    <div>
-      <img className="recipeImage" src={props.recipeImage} alt={props.name} />
+  return (
+  <div>
+    <img
+      className="recipeImage"
+      src={recipedata[0].recipeImage}
+      alt={recipedata[0].name}
+    />
     </div>
-  ));
-   return recipeImage;
- }
- 
- export default RecipeImage;
- 
- //import json file for the data
- //apply css for className recipeImage
- 
+  );
+}
+
+export default RecipeImage;
+
+//import json file for the data
+//apply css for className recipeImage
